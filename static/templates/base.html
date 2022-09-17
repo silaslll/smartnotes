@@ -1,0 +1,11 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" type = "text/css" href="{% static 'css/style.css' %}" />
+    </head>
+    <body>
+        <!-- block area where we can inject things -->
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

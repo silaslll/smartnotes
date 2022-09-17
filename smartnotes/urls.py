@@ -20,5 +20,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     #if we delete the app, this won't give any error
-    path('', include('home.urls'))
+    path('', include('home.urls')),
+    path('smart/', include('notes.urls')),
 ]
